@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <article>
+        <div class="main">
+            <h1>Student Information Table</h1>
+            <table id="studentTable" border="1">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Subject</th>
+                        <th id="studentAction">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="studentDataInfo">
+                </tbody>
+            </table>
+            <div id="edit-content" class="edit-content">
+                 <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="content">
+                        <div class="left">First Name:</div><div class="right"><input type="text" id="fname" name="fname" value=""></div>
+                        <div class="left">Last Name:</div><div class="right"><input type="text" id="lname" name="lname"></div>
+                        <div class="left">Subject:</div><div class="right"><input type="text" id="subject" name="subject"></div>
+                        <button id="content-save" > save </button>
+                        <button id="content-cancel">Cancel</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div id='message-content' class="message-content">
+                    <h4>Record Updated</h4>
+            </div>
+        </div>
+    </article>
+    <script type="text/javascript" src="./index.js">
+    </script>
+</body>
+</html>
